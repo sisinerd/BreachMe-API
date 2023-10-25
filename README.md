@@ -10,7 +10,7 @@ The api documentation for the project
 
 ### Base URL
 ```
-   https://cybersafe-api.vercel.app/api
+   http://localhost:8080/api
    
 ```   
 ### Authentication
@@ -124,30 +124,54 @@ To run this project locally, you will need NODEJS NPM and MYSQL(for database) in
 Clone the project
 
 ```bash
-  git clone https://github.com/hamisirizwan/cybersafe-api.git
+  git clone https://github.com/sisinerd/Cybersafe-API.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd cybersafe-api
+  cd Cybersafe-API
+  cd CODE
 ```
+Install and configure mysql
+
+Login to mysql using your mysql-username and password and create a database with whatever name you want, then give it privileges
+
+```bash
+  mysql -u username -p
+  CREATE DATABASE cybersafe;
+  GRANT ALL PRIVILEGES ON cybersafe.* TO 'username'@'localhost' IDENTIFIED BY 'your_password';
+  exit;
+```
+To run this project, you will need to copy the .env.example contents to your .env file and update their values. The JWTSECRET should be any random word. Replace the username and your_password field with your personal details created earlier
+
+```bash
+  gedit .env
+  PORT = 8080
+  JWTSECRET = "Ifyou#cangu^essthisthe&nides(0er$vetobehacked"
+  ADMIN_EMAIL = "admin@admin.com"
+  ADMIN_USERNAME = "admin"
+  ADMIN_PASSWORD = "admin123"
+  DATABASE_URL="mysql://username:your_password@localhost:3306/cybersafe"
+```
+Save and exit the .env file
 
 Install dependencies
 
 ```bash
-  npm install
+  sudo apt install npm
+  npm --version
 ```
-Add Environment Variables
 
-To run this project, you will need to copy the .env.example contents to your .env file and update their values as you wish.
 
-Start the server
+To start the server run the following
 
 ```bash
-  npm run dev
+  npx prisma db push
+  npx prisma generate
+  npm start 
 ```
-
+Now it will be reachable at http://localhost:8080/
 
 ### Vulnerabilities
 
