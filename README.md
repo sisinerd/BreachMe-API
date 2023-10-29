@@ -162,16 +162,22 @@ Install dependencies
   sudo apt install npm
   npm --version
 ```
-
-
-To start the server run the following
+Run the following
 
 ```bash
   npx prisma db push
   npx prisma generate
-  npm start 
 ```
 Now it will be reachable at http://localhost:8080/
+
+Before you begin testing you need to create an Admin user that will be used for the test
+
+``npm run seed-admin
+```
+To start the server run the following
+
+``npm start
+```
 
 ### Vulnerabilities
 
