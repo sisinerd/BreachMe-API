@@ -174,6 +174,7 @@ Before you begin testing you need to create an Admin user that will be used for 
 
 ``npm run seed-admin
 ```
+
 To start the server run the following
 
 ``npm start
