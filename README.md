@@ -147,7 +147,7 @@ To run this project, you will need to copy the .env.example contents to your .en
 
 ```bash
   gedit .env
-  PORT = 8080
+  PORT = 3030
   JWTSECRET = "Ifyou#cangu^essthisthe&nides(0er$vetobehacked"
   ADMIN_EMAIL = "admin@admin.com"
   ADMIN_USERNAME = "admin"
@@ -168,7 +168,7 @@ Run the following
   npx prisma db push
   npx prisma generate
 ```
-Now it will be reachable at http://localhost:8080/
+Now it will be reachable at http://localhost:3030/
 
 Before you begin testing you need to create an Admin user that will be used for the test
 
