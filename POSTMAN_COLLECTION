@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "068c9d61-b74d-4952-ae18-6f67981cd4f9",
-		"name": "CYBERSAFE_API",
+		"name": "BreachMe_API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "17803530"
 	},
@@ -24,13 +24,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://cybersafe-api.vercel.app/api/users/login",
-							"protocol": "https",
+							"raw": "http://localhost:3030/api/users/login",
+							"protocol": "http",
 							"host": [
-								"cybersafe-api",
-								"vercel",
-								"app"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"users",
@@ -55,13 +54,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://cybersafe-api.vercel.app/api/users/register",
-							"protocol": "https",
+							"raw": "http://localhost:3030/api/users/register",
+							"protocol": "http",
 							"host": [
-								"cybersafe-api",
-								"vercel",
-								"app"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"users",
@@ -87,13 +85,12 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "https://cybersafe-api.vercel.app/api/users/generate-key",
-							"protocol": "https",
+							"raw": "http://localhost:3030/api/users/generate-key",
+							"protocol": "http",
 							"host": [
-								"cybersafe-api",
-								"vercel",
-								"app"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"users",
@@ -114,12 +111,12 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/users/update/3",
+							"raw": "http://localhost:3030/api/users/update/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "3030",
 							"path": [
 								"api",
 								"users",
@@ -136,13 +133,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://cybersafe-api.vercel.app/api/users/delete/3",
-							"protocol": "https",
+							"raw": "http://localhost:3030/api/users/delete/3",
+							"protocol": "http",
 							"host": [
-								"cybersafe-api",
-								"vercel",
-								"app"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"users",
@@ -159,13 +155,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://cybersafe-api.vercel.app/api/users/all",
-							"protocol": "https",
+							"raw": "http://localhost:3030/api/users/all",
+							"protocol": "http",
 							"host": [
-								"cybersafe-api",
-								"vercel",
-								"app"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"users",
@@ -196,13 +191,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://cybersafe-api.vercel.app/api/transactions/user",
-							"protocol": "https",
+							"raw": "http://localhost:3030/api/transactions/user",
+							"protocol": "http",
 							"host": [
-								"cybersafe-api",
-								"vercel",
-								"app"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"transactions",
@@ -230,13 +224,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://cybersafe-api.vercel.app/api/transactions/pay?amount=100&apikey=0796a4ef766a6b79178cc507337d33105d9c0cc9",
-							"protocol": "https",
+							"raw": "http://localhost:3030/api/transactions/pay?amount=100&apikey=0796a4ef766a6b79178cc507337d33105d9c0cc9",
+							"protocol": "http",
 							"host": [
-								"cybersafe-api",
-								"vercel",
-								"app"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"transactions",
@@ -271,13 +264,12 @@
 							}
 						},
 						"url": {
-							"raw": "https://cybersafe-api.vercel.app/api/transactions/withdraw",
-							"protocol": "https",
+							"raw": "http://localhost:3030/api/transactions/withdraw",
+							"protocol": "http",
 							"host": [
-								"cybersafe-api",
-								"vercel",
-								"app"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"transactions",
@@ -293,13 +285,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://cybersafe-api.vercel.app/api/transactions/all",
-							"protocol": "https",
+							"raw": "http://localhost:3030/api/transactions/all",
+							"protocol": "http",
 							"host": [
-								"cybersafe-api",
-								"vercel",
-								"app"
+								"localhost"
 							],
+							"port": "3030",
 							"path": [
 								"api",
 								"transactions",
