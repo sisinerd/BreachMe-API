@@ -1,4 +1,4 @@
-## CYBERSAFE API PROJECT DOCUMENTATIONS
+## BREACHME API PROJECT DOCUMENTATIONS
 
 ### Project Overview
 The API is designed for a financial institution and provides various functionalities for managing user accounts, generating API keys for authentication, accepting payments, withdrawing funds, and viewing transactions. Additionally, certain administrative privileges are required for deleting users and viewing all transactions.
@@ -10,7 +10,7 @@ The api documentation for the project
 
 ### Base URL
 ```
-   http://localhost:8080/api
+   http://localhost:3030/api
    
 ```   
 ### Authentication
@@ -124,13 +124,13 @@ To run this project locally, you will need NODEJS NPM and MYSQL(for database) in
 Clone the project
 
 ```bash
-  git clone https://github.com/sisinerd/Cybersafe-API.git
+  git clone https://github.com/sisinerd/BreachMe-API.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd Cybersafe-API
+  cd BreachMe-API
   cd CODE
 ```
 Install and configure mysql
@@ -139,8 +139,8 @@ Login to mysql using your mysql-username and password and create a database with
 
 ```bash
   mysql -u username -p
-  CREATE DATABASE cybersafe;
-  GRANT ALL PRIVILEGES ON cybersafe.* TO 'username'@'localhost' IDENTIFIED BY 'your_password';
+  CREATE DATABASE breachme;
+  GRANT ALL PRIVILEGES ON breachme.* TO 'username'@'localhost' IDENTIFIED BY 'your_password';
   exit;
 ```
 To run this project, you will need to copy the .env.example contents to your .env file and update their values. The JWTSECRET should be any random word. Replace the username and your_password field with your personal details created earlier
@@ -152,7 +152,7 @@ To run this project, you will need to copy the .env.example contents to your .en
   ADMIN_EMAIL = "admin@admin.com"
   ADMIN_USERNAME = "admin"
   ADMIN_PASSWORD = "admin123"
-  DATABASE_URL="mysql://username:your_password@localhost:3306/cybersafe"
+  DATABASE_URL="mysql://username:your_password@localhost:3306/breachme"
 ```
 Save and exit the .env file
 
